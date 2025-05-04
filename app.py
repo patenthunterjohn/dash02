@@ -61,6 +61,9 @@ app.layout = html.Div([
     html.Div(tool_show_table(df_query))
 ])
 
+# render 要新增這行
+server = app.server
+
 # 執行 Dash 應用
 if __name__ == "__main__":
     app.run_server(debug=True)
